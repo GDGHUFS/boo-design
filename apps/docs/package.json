@@ -1,0 +1,30 @@
+{
+  "name": "docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,css,md}": "prettier --write",
+    "**/*.{ts,tsx}": "eslint --fix --max-warnings 0"
+  },
+  "dependencies": {
+    "next": "^14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@boo-design/eslint-config": "workspace:*",
+    "@boo-design/typescript-config": "workspace:*",
+    "@types/node": "^20.17.6",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.0.3",
+    "typescript": "5.5.4"
+  }
+}

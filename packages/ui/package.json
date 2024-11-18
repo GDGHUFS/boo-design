@@ -1,0 +1,30 @@
+{
+  "name": "@boo-design/ui",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix --max-warnings 0"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@boo-design/eslint-config": "workspace:*",
+    "@boo-design/typescript-config": "workspace:*",
+    "@types/eslint": "^8.56.12",
+    "@types/node": "^20.17.6",
+    "@types/react": "18.3.0",
+    "@types/react-dom": "18.3.1",
+    "eslint": "^8.57.1",
+    "typescript": "5.5.4"
+  }
+}
